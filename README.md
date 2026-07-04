@@ -9,11 +9,13 @@
 
 # WhatAboutSAM
 
-## Authorization and Educational Use Disclaimer
+## ⚠️ Disclaimer: Authorized Educational Use Only
 
 This project is intended strictly for cybersecurity education and authorized security research. It may only be used in environments where you have clear, prior, and explicit permission to perform credential and SAM-related testing, such as systems you own or systems covered by a valid authorization agreement.
 
 By no means may this project be used against any system, account, network, or data without prior authorization. Unauthorized use is prohibited and may violate applicable laws, policies, and professional ethics. Users are solely responsible for ensuring that every use of this project is lawful, permitted, and properly scoped.
+
+## Introduction
 
 WhatAboutSAM is my custom Windows SAM dumper. It can read SAM material directly from the live registry or from offline hives exposed through a Shadow Snapshot. The live registry method needs SYSTEM privileges, while the Shadow Snapshot method only needs an elevated administrator context because it reads the SAM and SYSTEM hives from a VSS snapshot. I wanted to study at a low level how Windows stores local user credentials in the Security Account Manager (SAM). As a Cybersecurity Engineer with a mostly offensive mindset, I have used many times the tools we all know: mimikatz, secretsdump (impacket), pwdump, hashdump (metasploit), crackmapexec (--sam parameter), LaZAgne...
 
